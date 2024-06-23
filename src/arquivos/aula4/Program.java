@@ -11,7 +11,7 @@ public class Program {
 
         String path = "/home/jader/IdeaProjects/course/src/arquivos/aula4/out.txt";
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) {
             for (String line : lines) {
                 bw.write(line);
                 bw.newLine();
